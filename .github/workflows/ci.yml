@@ -7,8 +7,8 @@ on:
 #    branches: [ "main" ]
   schedule:
     # * é um caractere curinga que corresponde a qualquer coisa
-    # '00 16 * * *' executa o trabalho todos os dias às 15:03 UTC-3 (03 18)
-    - cron: '03 18 * * *'
+    # '00 16 * * *' executa o trabalho todos os dias às 15:10 UTC-3 (10 18)
+    - cron: '10 18 * * *'
 
 jobs:
   test:
