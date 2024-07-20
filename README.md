@@ -34,8 +34,3 @@ Este é um exemplo básico de um projeto de automação de testes web usando o R
     ```
 
 
-## Prompt usado na StackSpot AI
-
-```bash
-    me de um exemplo de projeto de automação de testes Web usando Robotframework, para execução no Chrome
-```
