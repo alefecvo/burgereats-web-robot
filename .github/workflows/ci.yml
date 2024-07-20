@@ -36,13 +36,13 @@ jobs:
 
     - name: Install ChromeDriver
       run: |
-        python -m chromedriver_autoinstaller
+        python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
 
     - name: Run tests
       run: |
         Xvfb :99 -screen 0 1920x1080x24 &
         export DISPLAY=:99
-        robot --outputdir output tests/
+        robot --outputdir output -v  HANDLESS:S -v BROWSER:chrome -d results tests/
 
     - name: Archive test results
       uses: actions/upload-artifact@v2
