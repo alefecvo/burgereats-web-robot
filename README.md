@@ -26,11 +26,11 @@ Este é um exemplo básico de um projeto de automação de testes web usando o R
 
 3. Execute os testes informando Browser ou Handless:
     ```bash
-    robot -v  HANDLESS:S -v BROWSER:chrome -d results tests/
+    robot -v  HEADLESS:S -v BROWSER:chrome -d results tests/
     ```
 
     ```bash
-    robot -v  HANDLESS:S -v BROWSER:firefox -d results tests/
+    robot -v  HEADLESS:N -v BROWSER:firefox -d results tests/
     ```
 
 

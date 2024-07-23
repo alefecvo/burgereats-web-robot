@@ -5,14 +5,14 @@ Variables   ../resources/enviroments/env.yml
 
 *** Variables ***
 ${URL}           ${SELENIUM.URL} 
-${HANDLESS}      ${SELENIUM.HANDLESS}
+${HEADLESS}      ${SELENIUM.HEADLESS}
 ${BROWSER}       ${SELENIUM.BROWSER}
 
 
 
 *** Keywords ***
 Abrir Navegador
-    IF  "${HANDLESS}"=="S"
+    IF  "${HEADLESS}"=="S"
         IF  "${BROWSER}"=="chrome" 
             
         ${options}=   Evaluate    sys.modules['selenium.webdriver'].ChromeOptions() 
@@ -36,7 +36,7 @@ Abrir Navegador
         
         END
   
-    ELSE IF  "${HANDLESS}"=="N"
+    ELSE IF  "${HEADLESS}"=="N"
         IF  "${BROWSER}"=="chrome" 
             Open Browser    ${URL}       chrome
 
