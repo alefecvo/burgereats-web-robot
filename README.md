@@ -1,4 +1,4 @@
-# Projeto de Automação de Testes Web com Robot Framework
+# Projeto de Automação de Testes Web com RobotFramework
 
 Este é um exemplo básico de um projeto de automação de testes web usando o Robot Framework e SeleniumLibrary para execução no Chrome, para automação de testes do site https://buger-eats.vercel.app/.
 
